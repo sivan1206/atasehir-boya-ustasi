@@ -610,19 +610,15 @@ section {
   .district-group ul {
     columns: 1;
   }
-  
+
   .district-group li {
     padding: 0.6rem 0;
     font-size: 1rem;
+    padding-left: 2rem; /* ← Çakışmayı önlemek için artırıldı */
   }
-}
 
-@media (max-width: 480px) {
-  .districts {
-    padding: 3rem 1rem;
-  }
-  
-  .district-group {
-    padding: 1.5rem;
+  .district-group li::before {
+    top: 0.55rem;        /* ← İkonun metinle hizalanması sağlandı */
+    font-size: 0.9rem;   /* ← Küçük ekran için ikon biraz küçültüldü */
   }
 }
